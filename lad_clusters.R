@@ -112,6 +112,7 @@ geo_data %>%
   ggplot(aes(fill = factor(cluster))) +
   geom_sf() +
   ggthemes::theme_map() +
+  theme(panel.background = element_rect(color="white")) +
   labs(
     fill = "Cluster",
     title = "Cluster analysis of local authorities in the UK",
